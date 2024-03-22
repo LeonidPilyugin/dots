@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cp -a ./dots/. ~/
+cp -ai ./dots/. ~/
  
