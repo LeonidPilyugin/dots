@@ -4,6 +4,7 @@ echo "Updating repo"
 
 PATHES=(
     # vim
+    .vim/templates
     .vim/colors
     .vim/ultisnips
     .vimrc
@@ -11,8 +12,6 @@ PATHES=(
     .zshrc
     # git
     .gitconfig
-    # bash
-    .bashrc
 )
 
 rm -rf dots

@@ -25,6 +25,7 @@ Plugin 'lervag/vimtex'               " LaTeX
 Plugin 'sirver/ultisnips'            " snippets
 "Plugin 'jiangmiao/auto-pairs'        " auto-pairing brackets
 Plugin 'mechatroner/rainbow_csv'     " csv plugin
+Plugin 'tibabit/vim-templates'      " templates
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -99,6 +100,18 @@ imap <right> <nop>
 
 " exit to normal mode with 'jj'
 inoremap jj <ESC>
+
+inoremap { {}<Esc>ha
+inoremap ( ()<Esc>ha
+inoremap [ []<Esc>ha
+inoremap " ""<Esc>ha
+inoremap ' ''<Esc>ha
+inoremap ` ``<Esc>ha
+
+" Template plugin settings
+let g:tmpl_search_paths = ['~/.vim/templates']
+let g:tmpl_author_email = 'l.pilyugin@gmail.com'
+:nnoremap <S-T> :TemplateInit<CR>
 
 autocmd FileType yaml,json,csv setlocal nospell
 
