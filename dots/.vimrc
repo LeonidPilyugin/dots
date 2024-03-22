@@ -16,9 +16,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'         " file browser
-"Plugin 'davidhalter/jedi-vim'        " Python autocomplete
+Plugin 'davidhalter/jedi-vim'        " Python autocomplete
 "Plugin 'valloric/youcompleteme'      " C/C++ autocomplete
-"Plugin 'tpope/vim-surround'          " quick brackets, quotes and tags change
+Plugin 'tpope/vim-surround'          " quick brackets, quotes and tags change
 "Plugin 'scrooloose/syntastic'        " syntax analyzer
 Plugin 'tpope/vim-commentary'        " commenting
 Plugin 'lervag/vimtex'               " LaTeX

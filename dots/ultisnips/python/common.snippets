@@ -1,0 +1,39 @@
+snippet ifmain "ifmain" b
+if __name__ == "__main__":
+    $0
+endsnippet
+
+snippet for "for" b
+for $2 in $1:
+    $0
+endsnippet
+
+snippet if "if" b
+if $1:
+    $0
+endsnippet
+
+snippet eif "else if" b
+if $2:
+    $1
+else:
+    $0
+endsnippet
+
+snippet class "class" b
+class $1:
+    $0
+endsnippet
+
+snippet def "def" b
+def $2($1):
+    $0
+endsnippet
+
+snippet doc "docstring" b
+"""
+$1
+"""
+$0
+endsnippet
+
