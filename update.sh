@@ -18,7 +18,7 @@ PATHES=(
 for path in "${PATHES[@]}"
 do
     echo "Copying \"~/$path\""
-    cp -a ~/$path ./dots/
+    cp -a ~/$path ./dots/$path
 done
 
 git add --all
