@@ -110,5 +110,6 @@ set secure   " forbid .vimrc run bash and smth else
 set autoread " automatically reload buffer
 
 " Terminal shortcut
-set termwinsize=10x0
+set termwinsize=20x0
 cabbrev bterm bo term
+
