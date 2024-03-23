@@ -60,27 +60,16 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 
-" nerdtree settings
-au VimEnter * NERDTree  "  auto-load NERDTree
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
-" youautocomplete settings
-"let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
-"let g:ycm_key_list_select_completion = ['', '']
-"let g:ycm_key_list_previous_completion= ['', '']
-
-" vimtex settings
-let g:tex_flavor = 'latex'
-let g:vimtex_quickfix_mode = 0
-let g:vimtex_view_general_viewer = 'okular'
 
 " snippets settings
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/ultisnips', getcwd().'/.vim/ultisnips']
-
-" right column
-" set colorcolumn=110
 
 " spell check
 set spell spelllang=en_us,ru_ru
@@ -101,6 +90,7 @@ imap <right> <nop>
 " exit to normal mode with 'jj'
 inoremap jj <ESC>
 
+" Autocomplete pair brackets
 inoremap { {}<Esc>ha
 inoremap ( ()<Esc>ha
 inoremap [ []<Esc>ha
@@ -113,15 +103,12 @@ let g:tmpl_search_paths = ['~/.vim/templates']
 let g:tmpl_author_email = 'l.pilyugin@gmail.com'
 :nnoremap <S-T> :TemplateInit<CR>
 
-" Tabs
-nnoremap <C-t> :tabn<CR>
-nnoremap <C-f> :tabfirst<CR>
-
 autocmd FileType yaml,json,csv setlocal nospell
 
-set exrc  " use local .vimrc            
-set secure  " forbid .vimrc run bash and smth else
+set exrc     " use local .vimrc            
+set secure   " forbid .vimrc run bash and smth else
+set autoread " automatically reload buffer
 
-:bo term
-:resize 20
-
+" Terminal shortcut
+set termwinsize=10x0
+cabbrev bterm bo term
