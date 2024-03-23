@@ -113,6 +113,10 @@ let g:tmpl_search_paths = ['~/.vim/templates']
 let g:tmpl_author_email = 'l.pilyugin@gmail.com'
 :nnoremap <S-T> :TemplateInit<CR>
 
+" Tabs
+nnoremap <C-t> :tabn<CR>
+nnoremap <C-f> :tabfirst<CR>
+
 autocmd FileType yaml,json,csv setlocal nospell
 
 set exrc  " use local .vimrc            
