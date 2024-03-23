@@ -122,3 +122,6 @@ autocmd FileType yaml,json,csv setlocal nospell
 set exrc  " use local .vimrc            
 set secure  " forbid .vimrc run bash and smth else
 
+:bo term
+:resize 20
+
