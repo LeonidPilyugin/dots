@@ -108,8 +108,9 @@ autocmd FileType yaml,json,csv setlocal nospell
 set exrc     " use local .vimrc            
 set secure   " forbid .vimrc run bash and smth else
 set autoread " automatically reload buffer
+set clipboard=unnamedplus " use system clipboard
 
 " Terminal shortcut
 set termwinsize=20x0
-cabbrev bterm bo term
+cabbrev bt bo term
 
