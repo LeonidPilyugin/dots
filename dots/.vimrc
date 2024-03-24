@@ -114,3 +114,6 @@ set clipboard=unnamedplus " use system clipboard
 set termwinsize=20x0
 cabbrev bt bo term
 
+" Extra file types
+autocmd BufRead,BufNewFile *.lmpt setfiletype lammps
+
