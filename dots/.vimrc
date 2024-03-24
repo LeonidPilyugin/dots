@@ -18,14 +18,15 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'         " file browser
 Plugin 'davidhalter/jedi-vim'        " Python autocomplete
 "Plugin 'valloric/youcompleteme'      " C/C++ autocomplete
-Plugin 'tpope/vim-surround'          " quick brackets, quotes and tags change
+"Plugin 'tpope/vim-surround'          " quick brackets, quotes and tags change
 "Plugin 'scrooloose/syntastic'        " syntax analyzer
 Plugin 'tpope/vim-commentary'        " commenting
-Plugin 'lervag/vimtex'               " LaTeX
+"Plugin 'lervag/vimtex'               " LaTeX
 Plugin 'sirver/ultisnips'            " snippets
 "Plugin 'jiangmiao/auto-pairs'        " auto-pairing brackets
 Plugin 'mechatroner/rainbow_csv'     " csv plugin
 Plugin 'tibabit/vim-templates'      " templates
+Plugin 'tommason14/lammps.vim'      " lammps syntax highlight
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
