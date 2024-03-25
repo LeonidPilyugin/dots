@@ -16,10 +16,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'         " file browser
-Plugin 'davidhalter/jedi-vim'        " Python autocomplete
-"Plugin 'valloric/youcompleteme'      " C/C++ autocomplete
-"Plugin 'tpope/vim-surround'          " quick brackets, quotes and tags change
-"Plugin 'scrooloose/syntastic'        " syntax analyzer
+"Plugin 'davidhalter/jedi-vim'        " Python autocomplete
 Plugin 'tpope/vim-commentary'        " commenting
 "Plugin 'lervag/vimtex'               " LaTeX
 Plugin 'sirver/ultisnips'            " snippets
@@ -27,6 +24,7 @@ Plugin 'sirver/ultisnips'            " snippets
 Plugin 'mechatroner/rainbow_csv'     " csv plugin
 Plugin 'tibabit/vim-templates'      " templates
 Plugin 'tommason14/lammps.vim'      " lammps syntax highlight
+Plugin 'Valloric/YouCompleteMe'      " autocomplete
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -118,3 +116,10 @@ cabbrev bt bo term
 " Extra file types
 autocmd BufRead,BufNewFile *.lmpt setfiletype lammps
 
+" YouCompleteMe settings
+" make YCM compatible with UltiSnips (using <Ctrl-N>, <Ctrl-P>)
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+" remove YCM ui
+let g:ycm_show_diagnostics_ui = 0
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
