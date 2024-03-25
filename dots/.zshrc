@@ -86,4 +86,6 @@ function uwf () { uwuify "$@" | wl-copy }
 
 function trf () { trans file://$(pwd)/$1 > $2 2> /dev/null }
 
-
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8

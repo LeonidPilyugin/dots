@@ -1,10 +1,18 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible " be iMproved
+filetype off
 
-" enable 24-bit colors
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-set termguicolors
+if $TERM == 'linux'
+    colorscheme default
+else
+    " enable 24-bit colors
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+    " colors
+    colorscheme kawaii
+    " encoding
+    set enc=utf8
+endif
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -46,14 +54,8 @@ syntax on
 
 " line numbers
 set number
-
-" encoding
-set enc=utf8
-
-" colors
-colorscheme kawaii
-
 " tabs
+"
 set smarttab
 set expandtab
 set shiftwidth=4
