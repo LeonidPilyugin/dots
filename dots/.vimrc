@@ -133,6 +133,6 @@ nmap <F6> :NERDTreeToggle<CR>
 " buffer switching
 nnoremap <C-N> :bnext<cr>
 nnoremap <C-P> :bprevious<cr>
-nnoremap <C-D> :bdelete<cr>
+nnoremap <C-E> :bdelete<cr>
 nnoremap <C-C> :%bd\|e#\|:NERDTreeToggle<cr>
 
