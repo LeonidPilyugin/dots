@@ -73,8 +73,8 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/ultisnips', getcwd().'/.vim/ultisnips']
 
 " spell check
-set spell spelllang=en_us,ru_ru
-inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+" set spell spelllang=en_us,ru_ru
+" inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 " Disable Arrow keys in Normal mode
 map <up> <nop>
@@ -102,9 +102,7 @@ inoremap ` ``<Esc>ha
 " Template plugin settings
 let g:tmpl_search_paths = ['~/.vim/templates']
 let g:tmpl_author_email = 'l.pilyugin@gmail.com'
-:nnoremap <S-T> :TemplateInit<CR>
-
-autocmd FileType yaml,json,csv setlocal nospell
+nnoremap <S-T> :TemplateInit<CR>
 
 set exrc     " use local .vimrc            
 set secure   " forbid .vimrc run bash and smth else
@@ -125,3 +123,16 @@ let g:ycm_key_list_previous_completion=[]
 " remove YCM ui
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+
+" backspace fix
+set backspace=indent,eol,start
+
+" NerdTree toggle
+nmap <F6> :NERDTreeToggle<CR>
+
+" buffer switching
+nnoremap <C-N> :bnext<cr>
+nnoremap <C-P> :bprevious<cr>
+nnoremap <C-D> :bdelete<cr>
+nnoremap <C-C> :%bd\|e#\|:NERDTreeToggle<cr>
+
