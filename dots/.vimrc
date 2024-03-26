@@ -2,7 +2,7 @@ set nocompatible " be iMproved
 filetype off
 
 if $TERM == 'linux'
-    colorscheme default
+    colorscheme kawaii8
 else
     " enable 24-bit colors
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
