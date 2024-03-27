@@ -4,6 +4,8 @@ filetype off
 if $TERM == 'linux'
     colorscheme kawaii8
     au VimLeave * :!clear
+    let g:NERDTreeDirArrowExpandable = '>'
+    let g:NERDTreeDirArrowCollapsible = 'V'
 else
     " enable 24-bit colors
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -129,8 +131,12 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 " backspace fix
 set backspace=indent,eol,start
 
-" NerdTree toggle
+" NerdTree settings
 nmap <F6> :NERDTreeToggle<CR>
+" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
+autocmd BufEnter * if winnr() == winnr('h') && bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+            \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+let g:NERDTreeFileLines = 1
 
 " buffer switching
 nnoremap .<C-N> :bnext<cr>
