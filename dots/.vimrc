@@ -33,6 +33,7 @@ Plugin 'mechatroner/rainbow_csv'     " csv plugin
 Plugin 'tibabit/vim-templates'      " templates
 Plugin 'tommason14/lammps.vim'      " lammps syntax highlight
 Plugin 'Valloric/YouCompleteMe'      " autocomplete
+Plugin 'sk1418/HowMuch'              " Caclulator
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -137,6 +138,6 @@ nnoremap .<C-D> :bdelete<cr>
 nnoremap .<C-T> :%bd\|e#\|:NERDTreeToggle<cr>
 
 " Paste only if yanced
-noremap p "0p
-noremap P "0P
-vnoremap p "0p
+noremap <Leader>p "0p
+noremap <Leader>P "0P
+vnoremap <Leader>p "0p
