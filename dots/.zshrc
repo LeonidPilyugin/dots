@@ -80,6 +80,10 @@ source $ZSH/oh-my-zsh.sh
 alias ovito=/opt/ovito/bin/ovito
 alias passgen="pass generate -c"
 
+if [[ $TERM == "linux" || $TERM == "xterm" ]]; then
+    alias vim="vim; clear"
+fi
+
 function fgt () { "$@" &>/dev/null  &! }
 
 function uwf () { uwuify "$@" | wl-copy }
