@@ -142,3 +142,6 @@ nnoremap .<C-T> :%bd\|e#\|:NERDTreeToggle<cr>
 noremap <Leader>p "0p
 noremap <Leader>P "0P
 vnoremap <Leader>p "0p
+
+" HowNuch plugin settings
+let g:HowMuch_scale = 20
