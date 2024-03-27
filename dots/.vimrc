@@ -131,8 +131,12 @@ set backspace=indent,eol,start
 nmap <F6> :NERDTreeToggle<CR>
 
 " buffer switching
-nnoremap <C-N> :bnext<cr>
-nnoremap <C-P> :bprevious<cr>
-nnoremap <C-E> :bdelete<cr>
-nnoremap <C-C> :%bd\|e#\|:NERDTreeToggle<cr>
+nnoremap .<C-N> :bnext<cr>
+nnoremap .<C-P> :bprevious<cr>
+nnoremap .<C-D> :bdelete<cr>
+nnoremap .<C-T> :%bd\|e#\|:NERDTreeToggle<cr>
 
+" Paste only if yanced
+noremap p "0p
+noremap P "0P
+vnoremap p "0p
