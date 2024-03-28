@@ -26,6 +26,7 @@ highlight! link StatusLineNC StatusLine
 hi StatusLineTerm cterm=NONE ctermfg=white ctermbg=green
 highlight! link StatusLineTermNC StatusLineTerm
 hi Pmenu cterm=NONE ctermfg=white ctermbg=magenta
+hi PMenuSel cterm=NONE ctermfg=white ctermbg=cyan
 hi Visual cterm=NONE ctermfg=white ctermbg=magenta
 hi SpellLocal cterm=NONE ctermfg=NONE ctermbg=NONE
 hi SpellRare cterm=NONE ctermfg=NONE ctermbg=NONE

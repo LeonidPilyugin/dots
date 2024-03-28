@@ -77,8 +77,8 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting dirhistory pass copypat
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-alias ovito=/opt/ovito/bin/ovito
 alias passgen="pass generate -c"
+alias cla=clear
 
 function fgt () { "$@" &>/dev/null  &! }
 
