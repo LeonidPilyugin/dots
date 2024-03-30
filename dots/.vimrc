@@ -29,13 +29,14 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'         " file browser
 "Plugin 'davidhalter/jedi-vim'        " Python autocomplete
 Plugin 'tpope/vim-commentary'        " commenting
-"Plugin 'lervag/vimtex'               " LaTeX
+Plugin 'lervag/vimtex'               " LaTeX
 Plugin 'sirver/ultisnips'            " snippets
 "Plugin 'jiangmiao/auto-pairs'        " auto-pairing brackets
 Plugin 'mechatroner/rainbow_csv'     " csv plugin
 Plugin 'tibabit/vim-templates'      " templates
 Plugin 'tommason14/lammps.vim'      " lammps syntax highlight
 Plugin 'Valloric/YouCompleteMe'      " autocomplete
+Bundle 'ervandew/supertab'
 Plugin 'sk1418/HowMuch'              " Caclulator
 
 " All of your Plugins must be added before the following line
@@ -71,9 +72,14 @@ autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
 
 " snippets settings
-let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/ultisnips', getcwd().'/.vim/ultisnips']
 
 " spell check
