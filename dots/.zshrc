@@ -80,10 +80,14 @@ alias passgen="pass generate -c"
 alias cla=clear
 alias mp="mpv --vo=drm --keep-open=yes"
 
-alias m="mamba"
-alias ma="mamba activate"
+alias ma="mamba"
+alias maa="mamba activate"
 alias mad="mamba deactivate"
 alias mai="mamba install"
+alias mae="mamba env"
+alias maec="mamba env create"
+alias mael="mamba env list"
+alias mal="mamba list"
 
 function fgt () { "$@" &>/dev/null  &! }
 
