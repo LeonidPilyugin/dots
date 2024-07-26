@@ -88,6 +88,7 @@ alias mac="mamba create"
 alias mae="mamba env"
 alias maec="mamba env create"
 alias mael="mamba env list"
+alias maer="mamba env remove"
 alias mal="mamba list"
 
 alias z="source ~/.zshrc"
