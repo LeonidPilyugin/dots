@@ -80,6 +80,10 @@ alias passgen="pass generate -c"
 alias cla=clear
 alias mp="mpv --vo=drm --keep-open=yes"
 
+alias ma=mamba activate
+alias mad=mamba deactivate
+alias mai=mamba install
+
 function fgt () { "$@" &>/dev/null  &! }
 
 function uwf () { uwuify "$@" | wl-copy }
