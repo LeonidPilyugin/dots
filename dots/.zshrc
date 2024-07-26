@@ -80,6 +80,7 @@ alias passgen="pass generate -c"
 alias cla=clear
 alias mp="mpv --vo=drm --keep-open=yes"
 
+alias m=mamba
 alias ma=mamba activate
 alias mad=mamba deactivate
 alias mai=mamba install
