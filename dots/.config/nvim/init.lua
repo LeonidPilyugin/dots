@@ -8,7 +8,15 @@ vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
 
 -- Keymap ESC
-vim.keymap.set('i', "<C-]>", '<Esc>', {})
+vim.keymap.set('i', "<C-o>", '<Esc>', {})
+vim.keymap.set('n', "<C-o>", '<Esc>', {})
+vim.keymap.set('v', "<C-o>", '<Esc>', {})
+
+-- Window navigation
+vim.keymap.set('n', "<C-l>", '<C-w>l', {})
+vim.keymap.set('n', "<C-k>", '<C-w>k', {})
+vim.keymap.set('n', "<C-j>", '<C-w>j', {})
+vim.keymap.set('n', "<C-h>", '<C-w>h', {})
 
 -- Common exit keymaps
 vim.keymap.set("n", "<C-s>", ":wa<cr>")
