@@ -1,3 +1,5 @@
+set t_Co=256
+
 highlight Normal guifg=#282E33 guibg=#FFE0F2 guisp=NONE blend=NONE gui=NONE
 highlight ColorColumn guifg=#282E33 guibg=#FFB3DE guisp=NONE blend=NONE gui=NONE
 highlight Comment guifg=#B500C2 guibg=NONE guisp=NONE blend=NONE gui=italic
