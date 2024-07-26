@@ -89,6 +89,8 @@ alias maec="mamba env create"
 alias mael="mamba env list"
 alias mal="mamba list"
 
+alias z="source ~/.zshrc"
+
 function fgt () { "$@" &>/dev/null  &! }
 
 function uwf () { uwuify "$@" | wl-copy }
