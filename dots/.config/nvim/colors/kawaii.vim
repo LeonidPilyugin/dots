@@ -1,5 +1,7 @@
 set t_Co=256
 
+set termguicolors
+
 set background=light
 let g:colors_name="kawaii"
 
