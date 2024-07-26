@@ -1,0 +1,13 @@
+#ifndef {{MACRO_GUARD_FULL}}
+#define {{MACRO_GUARD_FULL}}
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

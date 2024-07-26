@@ -1,0 +1,156 @@
+snippet #! "shebang" b
+#!/usr/bin/python3
+endsnippet
+
+snippet main "main function" b
+if __name__ == "__main__":
+	pass
+endsnippet
+
+snippet imp "import" b
+import $0
+endsnippet
+
+snippet fimp "from import" b
+from ${1:module} import $0
+endsnippet
+
+snippet try "try except" b
+try:
+	${0:${VISUAL}}
+except Exception as e:
+	print(f"Unknown exception {e}}")
+	raise
+endsnippet
+
+snippet exc "except" b
+except ${1:Exception} as e:
+	${0:${VISUAL}}
+endsnippet
+
+snippet with "with" b
+with ${1:what}:
+	${0:${VISUAL}}
+endsnippet
+
+snippet if "if" b
+if ${1:True}:
+	${0:${VISUAL}}
+endsnippet
+
+snippet elif "elif" b
+elif ${1:True}:
+	${0:${VISUAL}}
+endsnippet
+
+snippet else "else" b
+else:
+	${0:${VISUAL}}
+endsnippet
+
+snippet while "while" b
+while ${1:True}:
+	${0:${VISUAL}}
+endsnippet
+
+snippet for "for loop" b
+for ${1:i} in ${2:iter}:
+	${0:${VISUAL}}
+endsnippet
+
+snippet range "range" b
+range(${1:start}, ${2:stop}, ${3:step})$0
+endsnippet
+
+snippet def "function def" b
+def ${1:function_name}(${2:params}) -> ${3:None}:
+	"""
+	${0:${VISUAL}}
+	"""
+	pass
+endsnippet
+
+snippet class "class" b
+class ${1:ClassName}(${2:object}):
+	"""
+	${0:${VISUAL}}
+	"""
+	pass
+endsnippet
+
+snippet aclass "abstract class" b
+class ${1:AbstractClassName}(${2:object}, metaclass=ABCMeta):
+	"""
+	${0:${VISUAL}}
+	"""
+	pass
+endsnippet
+
+snippet mdef "Method define" b
+def ${1:method_name}(self, ${2:params}) -> ${3:None}:
+	"""
+	${0:${VISUAL}}
+	"""
+	pass
+endsnippet
+
+snippet iter "Iter methods" b
+def __getitem__(self, key: ${1:Any}) -> ${2:Any}:
+	"""
+    ${0:${VISUAL}}	
+	"""
+	pass
+
+def __setitem__(self, key: ${1:Any}, value: ${2:Any}) -> None:
+	"""
+    ${0:${VISUAL}}	
+	"""
+	pass
+
+def __delitem__(self, key: ${1:Any}) -> None:
+	"""
+    ${0:${VISUAL}}	
+	"""
+	pass
+
+def __iter__(self) -> ${1:Any}:
+	"""
+    ${0:${VISUAL}}	
+	"""
+	pass
+endsnippet
+
+snippet dict "Convert to dict" b:
+def asdict(self) -> Dict:
+	"""
+    ${0:${VISUAL}}	
+	"""
+	pass
+endsnippet
+
+snippet init "init method" b
+def __init__(self, ${1:args}):
+	"""
+    ${0:${VISUAL}}	
+	"""
+	pass
+endsnippet
+
+
+snippet doc "Docstring" b
+"""${0:${VISUAL}}"""
+endsnippet
+
+snippet mdoc "Module documentation" b
+"""
+.. module:: ${1:module}
+	:platform: ${2:Unix}
+	:synopsis: ${3:Description}
+
+.. moduleauthor:: Leonid Pilyugin <l.pilyugin04@gmail.com>
+
+"""
+$0
+endsnippet
+
+
