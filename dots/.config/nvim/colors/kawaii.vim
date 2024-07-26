@@ -1,5 +1,8 @@
 set t_Co=256
 
+set background=light
+let g:colors_name="kawaii"
+
 highlight Normal guifg=#282E33 guibg=#FFE0F2 guisp=NONE blend=NONE gui=NONE
 highlight ColorColumn guifg=#282E33 guibg=#FFB3DE guisp=NONE blend=NONE gui=NONE
 highlight Comment guifg=#B500C2 guibg=NONE guisp=NONE blend=NONE gui=italic
@@ -53,5 +56,3 @@ highlight VertSplit guifg=#282E33 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Visual guifg=#282E33 guibg=#FF99D3 guisp=NONE blend=NONE gui=bold
 highlight WarningMsg guifg=#B35900 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight @variable guifg=#8605FF guibg=NONE guisp=NONE blend=NONE gui=NONE
-set background=light
-let g:colors_name="kawaii"
