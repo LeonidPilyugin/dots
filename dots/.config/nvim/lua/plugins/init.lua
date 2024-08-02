@@ -35,4 +35,5 @@ return {
     "nvim-treesitter/nvim-treesitter",
     -- Convert colortheme to lua
     "rktjmp/shipwright.nvim",
+    "tommason14/lammps.vim",
 }
