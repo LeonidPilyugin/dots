@@ -12,6 +12,9 @@ vim.keymap.set('i', "<C-o>", '<Esc>', {})
 vim.keymap.set('n', "<C-o>", '<Esc>', {})
 vim.keymap.set('v', "<C-o>", '<Esc>', {})
 
+-- Remove search highlight
+vim.keymap.set('n', "<C-i>", '<esc>:noh<cr>')
+
 -- Window navigation
 vim.keymap.set('n', "<C-l>", '<C-w>l', {})
 vim.keymap.set('n', "<C-k>", '<C-w>k', {})
@@ -158,6 +161,14 @@ require("nvim-treesitter.configs").setup {
         enable = true,
     },
 }
+
+-- Autocomplete
+local cmp = require("cmp")
+cmp.setup({
+    mapping = cmp.mapping.preset.insert({
+    ['<CR>'] = cmp.mapping.confirm({ select = false }),
+  })
+})
 
 if (os.getenv("TERM") == "linux")
 then
