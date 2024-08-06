@@ -93,6 +93,8 @@ alias mal="mamba list"
 
 alias z="source ~/.zshrc"
 
+alias rs="rsync -vh --info=progress2"
+
 function fgt () { "$@" &>/dev/null  &! }
 
 function uwf () { uwuify "$@" | wl-copy }
