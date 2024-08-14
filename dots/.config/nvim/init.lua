@@ -12,6 +12,10 @@ vim.keymap.set('i', "<C-o>", '<Esc>', {})
 vim.keymap.set('n', "<C-o>", '<Esc>', {})
 vim.keymap.set('v', "<C-o>", '<Esc>', {})
 
+vim.keymap.set('i', "<Esc>", ':Lazy<cr>', {})
+vim.keymap.set('n', "<Esc>", ':Lazy<cr>', {})
+vim.keymap.set('v', "<Esc>", ':Lazy<cr>', {})
+
 -- Remove search highlight
 vim.keymap.set('n', "<C-i>", '<esc>:noh<cr>')
 
@@ -64,6 +68,7 @@ require("mason-lspconfig").setup {
         "cmake",                        -- CMake
         "autotools_ls",                 -- Make
         "marksman",                     -- Markdown
+        "vala_ls",                       -- Vala
     },
 }
 local lspconfig = require('lspconfig')
@@ -75,6 +80,7 @@ lspconfig.ltex.setup {}
 lspconfig.jsonls.setup {}
 lspconfig.yamlls.setup {}
 lspconfig.taplo.setup {}
+lspconfig.vala_ls.setup{}
 
 -- Autocomplete
 local cmp = require("cmp")
@@ -130,6 +136,7 @@ lspconfig["ltex"].setup { capabilities = capabilities }
 lspconfig["jsonls"].setup { capabilities = capabilities }
 lspconfig["yamlls"].setup { capabilities = capabilities }
 lspconfig["taplo"].setup { capabilities = capabilities }
+lspconfig["vala_ls"].setup { capabilities = capabilities }
 
 -- Treesitter
 require("nvim-treesitter.configs").setup {
@@ -156,6 +163,7 @@ require("nvim-treesitter.configs").setup {
         "toml",
         "xml",
         "yaml",
+        "vala",
     },
     highlight = {
         enable = true,
