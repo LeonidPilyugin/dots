@@ -3,12 +3,6 @@
 echo "Updating repo"
 
 PATHES=(
-    # vim
-    .vim/templates
-    .vim/colors
-    .vim/ultisnips
-    .vim/.ycm_extra_conf.py
-    .vimrc
     # zsh
     .zshrc
     # git

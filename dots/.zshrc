@@ -101,6 +101,14 @@ function uwf () { uwuify "$@" | wl-copy }
 
 function trf () { trans file://$(pwd)/$1 > $2 2> /dev/null }
 
+function mp3repack () {
+    for file in $@; do
+        echo $file
+        mv $1 .temp.mp3 && ffmpeg -i .temp.mp3 $1 &> /dev/null
+        rm .temp.mp3
+    done;
+}
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
