@@ -8,13 +8,12 @@ vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
 
 -- Keymap ESC
-vim.keymap.set('i', "<C-o>", '<Esc>', {})
-vim.keymap.set('n', "<C-o>", '<Esc>', {})
-vim.keymap.set('v', "<C-o>", '<Esc>', {})
+vim.keymap.set('i', "<Alp-;>", '<Esc>', {})
+vim.keymap.set('n', "<Alt-;>", '<Esc>', {})
+vim.keymap.set('v', "<Alt-;>", '<Esc>', {})
 
-vim.keymap.set('i', "<Esc>", ':Lazy<cr>', {})
+-- Lazy menu
 vim.keymap.set('n', "<Esc>", ':Lazy<cr>', {})
-vim.keymap.set('v', "<Esc>", ':Lazy<cr>', {})
 
 -- Remove search highlight
 vim.keymap.set('i', "<C-i>", '<esc>:noh<cr>')
@@ -39,6 +38,9 @@ vim.keymap.set("i", "<C-q>", "<esc>:qa!<cr>")
 vim.keymap.set('n', '<Leader>p', '"0p')
 vim.keymap.set('n', '<Leader>P', '"0P')
 vim.keymap.set('v', '<Leader>p', '"0p')
+
+-- Move changing text to black hole
+vim.keymap.set('v', 'p', '"_dP')
 
 -- Buffers
 vim.keymap.set('n', '.<C-N>', ':bnext<cr>')
