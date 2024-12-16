@@ -72,7 +72,7 @@ require("mason-lspconfig").setup {
         "cmake",                        -- CMake
         "autotools_ls",                 -- Make
         "marksman",                     -- Markdown
-        "vala_ls",                      -- Vala
+        -- "vala_ls",                      -- Vala
         "biome",                        -- web
     },
 }
@@ -85,7 +85,7 @@ lspconfig.ltex.setup {}
 lspconfig.jsonls.setup {}
 lspconfig.yamlls.setup {}
 lspconfig.taplo.setup {}
-lspconfig.vala_ls.setup{}
+-- lspconfig.vala_ls.setup{}
 lspconfig.biome.setup{}
 
 -- Autocomplete
@@ -143,7 +143,7 @@ lspconfig["ltex"].setup { capabilities = capabilities }
 lspconfig["jsonls"].setup { capabilities = capabilities }
 lspconfig["yamlls"].setup { capabilities = capabilities }
 lspconfig["taplo"].setup { capabilities = capabilities }
-lspconfig["vala_ls"].setup { capabilities = capabilities }
+-- lspconfig["vala_ls"].setup { capabilities = capabilities }
 lspconfig["biome"].setup { capabilities = capabilities }
 
 -- Treesitter
