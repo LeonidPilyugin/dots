@@ -15,12 +15,12 @@ return {
     "rktjmp/lush.nvim",
 
     -- LSP
-    "gc/nvim-lspconfig",
+    "neovim/nvim-lspconfig",
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
 
     -- Autocomplete
-    "gc/nvim-lspconfig",
+    "neovim/nvim-lspconfig",
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-path",
