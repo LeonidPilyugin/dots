@@ -10,11 +10,12 @@ local fmta = require("luasnip.extras.fmt").fmta
 local rep = require("luasnip.extras").rep
 
 return {
-  s({ trig = "reg" },
-    {
-        t("region"),
-        i(1),
-    }
-  ),
+    s(
+        { trig = "reg" },
+        {
+            t("region"),
+            i(1),
+        }
+    ),
 }
 
