@@ -91,6 +91,8 @@ alias mael="mamba env list"
 alias maer="mamba env remove"
 alias mal="mamba list"
 
+alias patchouli=diff
+
 alias z="source ~/.zshrc"
 
 alias rs="rsync -vh --info=progress2"
@@ -105,6 +107,7 @@ function mp3repack () {
     for file in $@; do
         echo $file
         mv $1 .temp.mp3 && ffmpeg -i .temp.mp3 -b:a 192k $1 &> /dev/null
+        rm .temp.mp3
     done
 }
 
@@ -121,6 +124,10 @@ function allffmpeg () {
 }
 
 alias adjvol='allffmpeg -filter_complex "loudnorm,volume=5dB"'
+
+function dlay () {
+    yt-dlp -o "$1" --no-playlist -f "bestaudio" --audio-format wav "$2"
+}
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
