@@ -5,6 +5,7 @@ echo "Updating repo"
 PATHES=(
     .config/zsh
     .config/nvim
+    .zshrc
     .gitconfig
 )
 
