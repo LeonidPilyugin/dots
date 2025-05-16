@@ -1,9 +1,3 @@
-function fgt () { "$@" &>/dev/null  &! }
-
-function uwf () { uwuify "$@" | wl-copy }
-
-function trf () { trans file://$(pwd)/$1 > $2 2> /dev/null }
-
 function mp3repack () {
     for file in $@; do
         echo $file
