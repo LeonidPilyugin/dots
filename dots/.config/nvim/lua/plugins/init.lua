@@ -11,9 +11,6 @@ return {
     -- Terminal
     "akinsho/toggleterm.nvim",
     
-    -- Colorscheme creator
-    "rktjmp/lush.nvim",
-
     -- LSP
     "neovim/nvim-lspconfig",
     "williamboman/mason.nvim",
@@ -34,9 +31,18 @@ return {
     -- Better highlight
     "nvim-treesitter/nvim-treesitter",
 
-    -- Convert colortheme to lua
-    "rktjmp/shipwright.nvim",
+    -- Fuzzyfinder
+    {
+        "nvim-telescope/telescope.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    },
 
     -- Lammps syntax
     "tommason14/lammps.vim",
+
+    -- Convert colortheme to lua
+    "rktjmp/shipwright.nvim",
+
+    -- Colorscheme creator
+    "rktjmp/lush.nvim",
 }

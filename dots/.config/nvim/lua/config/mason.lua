@@ -15,14 +15,3 @@ require("mason-lspconfig").setup {
         "biome",                        -- web
     },
 }
-local lspconfig = require('lspconfig')
-lspconfig.pyright.setup({})
-lspconfig.clangd.setup({})
-lspconfig.bashls.setup({})
-lspconfig.pkgbuild_language_server.setup({})
-lspconfig.ltex.setup({})
-lspconfig.jsonls.setup({})
-lspconfig.yamlls.setup({})
-lspconfig.taplo.setup({})
--- lspconfig.vala_ls.setup({})
-lspconfig.biome.setup({})
