@@ -23,6 +23,7 @@ require("nvim-treesitter.configs").setup {
         "xml",
         "yaml",
         "vala",
+        "meson",
         "javascript",
     },
     highlight = {

@@ -3,12 +3,9 @@
 echo "Updating repo"
 
 PATHES=(
-    # zsh
-    .zshrc
-    # git
-    .gitconfig
-    # neovim
+    .config/zsh
     .config/nvim
+    .gitconfig
 )
 
 rm -rf dots

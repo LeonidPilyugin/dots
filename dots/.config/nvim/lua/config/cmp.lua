@@ -51,12 +51,12 @@ cmp.setup({
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local lspconfig = require('lspconfig')
-lspconfig["pyright"].setup { capabilities = capabilities }
-lspconfig["clangd"].setup { capabilities = capabilities }
-lspconfig["bashls"].setup { capabilities = capabilities }
-lspconfig["ltex"].setup { capabilities = capabilities }
-lspconfig["jsonls"].setup { capabilities = capabilities }
-lspconfig["yamlls"].setup { capabilities = capabilities }
-lspconfig["taplo"].setup { capabilities = capabilities }
--- lspconfig["vala_ls"].setup { capabilities = capabilities }
-lspconfig["biome"].setup { capabilities = capabilities }
+lspconfig["pyright"].setup({ capabilities = capabilities })
+lspconfig["clangd"].setup({ capabilities = capabilities })
+lspconfig["bashls"].setup({ capabilities = capabilities })
+lspconfig["ltex"].setup({ capabilities = capabilities })
+lspconfig["jsonls"].setup({ capabilities = capabilities })
+lspconfig["yamlls"].setup({ capabilities = capabilities })
+lspconfig["taplo"].setup({ capabilities = capabilities })
+-- lspconfig["vala_ls"].setup({ capabilities = capabilities })
+lspconfig["biome"].setup({ capabilities = capabilities })
