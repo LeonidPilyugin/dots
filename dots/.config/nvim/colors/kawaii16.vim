@@ -35,7 +35,7 @@ highlight ErrorMsg ctermfg=9 ctermbg=NONE cterm=NONE
 highlight FloatTitle ctermfg=15 ctermbg=NONE cterm=bold
 highlight Function ctermfg=11 ctermbg=NONE cterm=NONE
 highlight Identifier ctermfg=3 ctermbg=NONE cterm=NONE
-highlight IncSearch ctermfg=15 ctermbg=NONE cterm=NONE
+highlight IncSearch ctermfg=15 ctermbg=4 cterm=NONE
 highlight LineNr ctermfg=5 ctermbg=NONE cterm=NONE
 highlight MatchParen ctermfg=15 ctermbg=NONE cterm=NONE
 highlight ModeMsg ctermfg=15 ctermbg=NONE cterm=bold

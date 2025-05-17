@@ -32,7 +32,7 @@ highlight ErrorMsg guifg=#FF0000 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight FloatTitle guifg=#282E33 guibg=#FFB3DE guisp=NONE blend=NONE gui=bold
 highlight Function guifg=#998F00 guibg=NONE guisp=NONE blend=NONE gui=NONE
 highlight Identifier guifg=#C2000D guibg=NONE guisp=NONE blend=NONE gui=NONE
-highlight IncSearch guifg=#282E33 guibg=#F4C2DF guisp=NONE blend=NONE gui=NONE
+highlight IncSearch guifg=#282E33 guibg=#FF99D3 guisp=NONE blend=NONE gui=NONE
 highlight LineNr guifg=#282E33 guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight MatchParen guifg=#282E33 guibg=#CC80FF guisp=NONE blend=NONE gui=NONE
 highlight ModeMsg guifg=#282E33 guibg=NONE guisp=NONE blend=NONE gui=bold
