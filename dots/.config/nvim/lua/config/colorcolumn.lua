@@ -10,7 +10,7 @@ vim.api.nvim_create_autocmd(
 vim.api.nvim_create_autocmd(
     "FileType",
     {
-        pattern = "python,sh,zsh,lammps,lua,plaintex",
+        pattern = "python,sh,zsh,lammps,lua,plaintex,meson",
         command = "setlocal cc=80",
     }
 )

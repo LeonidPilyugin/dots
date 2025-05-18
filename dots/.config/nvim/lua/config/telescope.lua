@@ -6,6 +6,7 @@ telescope.setup({
             "%.trj$",
             "%.dump$",
             "%.lammpsdump$",
+            "%.checkpoint$",
             "^.git/", 
         }
     },

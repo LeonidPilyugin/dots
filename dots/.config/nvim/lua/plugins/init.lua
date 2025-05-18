@@ -5,6 +5,9 @@ return {
     -- Comments
     "numToStr/Comment.nvim",
 
+    -- Surroundings
+    "tpope/vim-surround",
+
     -- Calculator
     "sk1418/HowMuch",
 

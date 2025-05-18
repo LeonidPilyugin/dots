@@ -6,5 +6,6 @@ vim.keymap.set("n", "<leader>;",
     function ()
         vim.o.number = not vim.o.number
         vim.o.relativenumber = vim.o.number
-    end
+    end,
+    { desc = "Toggle line number" }
 )
