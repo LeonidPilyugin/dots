@@ -1,4 +1,5 @@
 require("config.etc")
+require("config.colorcolumn")
 require("config.colors")
 require("config.keymaps")
 require("config.lazy")
