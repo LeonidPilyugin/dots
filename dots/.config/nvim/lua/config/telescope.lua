@@ -1,6 +1,14 @@
 local telescope = require("telescope")
 
 telescope.setup({
+    defaults = { 
+        file_ignore_patterns = { 
+            "%.trj$",
+            "%.dump$",
+            "%.lammpsdump$",
+            "^.git/", 
+        }
+    },
     pickers = {
         find_files = {
             hidden = true,

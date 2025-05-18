@@ -1,5 +1,3 @@
-CONFIG_ROOT=~/.config/zsh
-
 if [ -d "$CONFIG_ROOT/local" ]; then
     source "$CONFIG_ROOT/local/init.zsh"
 fi

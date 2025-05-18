@@ -1,9 +1,9 @@
 return {
     -- File tree
-    "preservim/nerdtree",
+    "lambdalisue/vim-fern",
 
     -- Comments
-    "tpope/vim-commentary",
+    "numToStr/Comment.nvim",
 
     -- Calculator
     "sk1418/HowMuch",
@@ -41,8 +41,8 @@ return {
     "tommason14/lammps.vim",
 
     -- Convert colortheme to lua
-    "rktjmp/shipwright.nvim",
+    -- "rktjmp/shipwright.nvim",
 
     -- Colorscheme creator
-    "rktjmp/lush.nvim",
+    -- "rktjmp/lush.nvim",
 }
