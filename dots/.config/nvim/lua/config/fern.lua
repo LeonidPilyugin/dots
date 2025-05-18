@@ -1,6 +1,6 @@
 -- Keymaps
 vim.keymap.set("n", "<Leader>e", ":Fern -drawer -toggle .<cr>",
-    { desc = "Toggle NERDTree" })
+    { desc = "Toggle Fern" })
 
 local ferngroup = vim.api.nvim_create_augroup("fern-custom",
     { clear = true })
@@ -47,9 +47,6 @@ vim.api.nvim_create_autocmd(
         callback = define_fern_mappings,
     }
 )
-
--- Show hidden files
-vim.g["fern#default_hidden"] = 1
 
 -- Hide patterns
 local hide = "\\.trj$"
