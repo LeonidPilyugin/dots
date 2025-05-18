@@ -6,7 +6,7 @@ vim.keymap.set({ "n", "v", "i" }, "<alt-;>", "<esc>",
     { desc = "ESC keymap" })
 
 -- Lazy menu
-vim.keymap.set("n", "<esc>;", ":Lazy<cr>",
+vim.keymap.set("n", "<esc>;;", ":Lazy<cr>",
     { desc = "Open Lazy window" })
 
 -- Remove search highlight
