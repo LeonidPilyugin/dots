@@ -59,5 +59,6 @@ return function ()
     hide = hide .. "\\|" .. "\\.lammpsdump$"
     hide = hide .. "\\|" .. "\\.checkpoint$"
     hide = hide .. "\\|" .. "^\\.git$"
+    hide = hide .. "\\|" .. "^__pycache__$"
     vim.g["fern#default_exclude"] = hide
 end

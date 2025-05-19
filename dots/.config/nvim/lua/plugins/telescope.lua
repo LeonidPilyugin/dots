@@ -9,6 +9,7 @@ return function ()
                 "%.lammpsdump$",
                 "%.checkpoint$",
                 "^.git/", 
+                "^__pycache__/", 
             }
         },
         pickers = {

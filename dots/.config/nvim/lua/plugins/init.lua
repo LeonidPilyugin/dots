@@ -61,10 +61,10 @@ require("lazy").setup({
 
     -- LSP manager
     {
-        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
         config = require("plugins.mason"),
         dependencies = {
-            "williamboman/mason-lspconfig.nvim",
+            "williamboman/mason.nvim",
         },
     },
 

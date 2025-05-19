@@ -1,6 +1,6 @@
 return function ()
     require("mason").setup()
-    require("mason-lspconfig").setup {
+    require("mason-lspconfig").setup({
         ensure_installed = {
             "pyright",                      -- Python
             "clangd",                       -- C
@@ -12,8 +12,8 @@ return function ()
             "cmake",                        -- CMake
             "autotools_ls",                 -- Make
             "marksman",                     -- Markdown
-            -- "vala_ls",                      -- Vala
             "biome",                        -- web
+            -- "vala_ls",                      -- Vala
         },
-    }
+    })
 end
