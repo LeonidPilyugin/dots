@@ -19,7 +19,7 @@ vim.api.nvim_create_autocmd(
 vim.api.nvim_create_autocmd(
     "FileType",
     {
-        pattern = "plaintex,meson,yaml,json",
+        pattern = "plaintex,tex,meson,yaml,json",
         callback = function ()
             vim.o.tabstop = 2
             vim.o.expandtab = true

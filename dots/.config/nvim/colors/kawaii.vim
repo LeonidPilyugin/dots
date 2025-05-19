@@ -6,6 +6,7 @@ set background=light
 let g:colors_name="kawaii"
 
 highlight Normal guifg=#282E33 guibg=#FFE0F2 guisp=NONE blend=NONE gui=NONE
+highlight SpellBad guifg=NONE guibg=NONE guisp=#FF0000 blend=NONE gui=underline
 highlight ColorColumn guifg=#282E33 guibg=#FFB3DE guisp=NONE blend=NONE gui=NONE
 highlight Comment guifg=#B500C2 guibg=NONE guisp=NONE blend=NONE gui=italic
 highlight Constant guifg=#FF24A0 guibg=NONE guisp=NONE blend=NONE gui=NONE
