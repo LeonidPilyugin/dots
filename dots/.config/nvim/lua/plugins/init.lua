@@ -87,6 +87,7 @@ require("lazy").setup({
         dependencies = {
             "saadparwaiz1/cmp_luasnip",
         },
+        build = "make install_jsregexp",
     },
 
     -- Better highlight
