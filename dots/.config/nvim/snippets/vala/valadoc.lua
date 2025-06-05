@@ -33,7 +33,7 @@ end
 return {
     s(
         {
-            trig = [[^(\s*)\*]],
+            trig = [[^(\s*)::]],
             desc = "Plain valadoc comment",
             regTrig = true,
             trigEngine = "ecma",
@@ -61,7 +61,7 @@ return {
 
     s(
         {
-            trig = [[^(\s*)m\*]],
+            trig = [[^(\s*);;]],
             desc = "Method valadoc comment",
             regTrig = true,
             trigEngine = "ecma",
@@ -72,8 +72,7 @@ return {
                 <>/**
                 <> * <>
                 <> * 
-                <> * <>
-                <> * <>
+                <> * <><>
                 <> */
             ]],
             {
@@ -83,7 +82,6 @@ return {
                 pr(1),
                 pr(1),
                 i(2, "Long description"),
-                pr(1),
                 d(
                     3,
                     function(args, parent, old_state, user_args)
@@ -149,6 +147,8 @@ return {
 
                         -- Construct return value
                         nodes = {}
+
+                        table.insert(nodes, t({""}))
 
                         local index = 1
                         
