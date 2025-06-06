@@ -61,6 +61,29 @@ return {
 
     s(
         {
+            trig = [[^(\s*)..]],
+            desc = "Inherit valadoc comment",
+            regTrig = true,
+            trigEngine = "ecma",
+            snippetType = "autosnippet",
+        },
+        fmta(
+            [[
+                <>/**
+                <> * {@inheritDoc}
+                <> */
+            ]],
+            {
+                pr(1),
+                pr(1),
+                pr(1),
+            }
+        )
+    ),
+
+
+    s(
+        {
             trig = [[^(\s*);;]],
             desc = "Method valadoc comment",
             regTrig = true,

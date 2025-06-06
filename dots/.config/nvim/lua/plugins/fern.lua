@@ -15,13 +15,13 @@ return function ()
             { buffer = true, desc = "Fern open in split" })
         vim.keymap.set("n", "s", "<Plug>(fern-action-open:vsplit)",
             { buffer = true, desc = "Fern open in vsplit" })
-        vim.keymap.set("n", "r", "<Plug>(fern-action-reload)",
+        vim.keymap.set("n", ";r", "<Plug>(fern-action-reload)",
             { buffer = true, desc = "Fern reload" })
-        vim.keymap.set("n", "d", "<Plug>(fern-action-remove)",
+        vim.keymap.set("n", ";d", "<Plug>(fern-action-remove)",
             { buffer = true, desc = "Fern remove" })
-        vim.keymap.set("n", "m", "<Plug>(fern-action-move)",
+        vim.keymap.set("n", ";m", "<Plug>(fern-action-move)",
             { buffer = true, desc = "Fern move" })
-        vim.keymap.set("n", "n", "<Plug>(fern-action-new-path)",
+        vim.keymap.set("n", ";n", "<Plug>(fern-action-new-path)",
             { buffer = true, desc = "Fern create ne path" })
         vim.keymap.set("n", "u", "<Plug>(fern-action-leave)",
             { buffer = true, desc = "Fern leave directory" })

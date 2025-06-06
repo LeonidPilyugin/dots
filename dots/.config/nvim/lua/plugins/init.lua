@@ -52,7 +52,7 @@ require("lazy").setup({
         "akinsho/toggleterm.nvim",
         config = require("plugins.toggleterm"),
     },
-    
+
     -- LSP
     {
         "neovim/nvim-lspconfig",
@@ -109,6 +109,13 @@ require("lazy").setup({
     {
         "tommason14/lammps.vim",
         config = require("plugins.lammps"),
+    },
+
+    -- VimTeX
+    {
+        "lervag/vimtex",
+        lazy = false,
+        config = require("plugins.vimtex"),
     },
 
     -- Convert colortheme to lua

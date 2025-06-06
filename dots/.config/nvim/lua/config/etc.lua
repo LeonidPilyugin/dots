@@ -10,3 +10,9 @@ vim.o.secure = true
 
 -- Format settings
 vim.o.fo = "tcqjr"
+
+-- Remove trailing whitespaces
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*" },
+  command = [[%s/\s\+$//e]],
+})

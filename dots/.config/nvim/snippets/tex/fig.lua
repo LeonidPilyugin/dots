@@ -33,8 +33,8 @@ end
 return {
     s(
         {
-            trig = [[^(.+)?cc]],
-            desc = "Center environment",
+            trig = [[^(.+)?fig]],
+            desc = "Figure",
             regTrig = true,
             trigEngine = "ecma",
             snippetType = "autosnippet",
@@ -44,12 +44,10 @@ return {
         },
         fmta(
             [[
-                <>\begin{center}
-                <>  <>
-                <>\end{center}
+                <>\includegraphics[width=0.<>\textwidth{<>}
                 <>
             ]],
-            { pr(1), pr(1), i(1), pr(1), pr(1) }
+            { pr(1), i(1), i(2), pr(1) }
         )
     ),
 }
