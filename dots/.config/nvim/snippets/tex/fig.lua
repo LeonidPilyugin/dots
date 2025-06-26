@@ -44,7 +44,7 @@ return {
         },
         fmta(
             [[
-                <>\includegraphics[width=0.<>\textwidth{<>}
+                <>\includegraphics[width=0.<>\textwidth]{<>}
                 <>
             ]],
             { pr(1), i(1), i(2), pr(1) }

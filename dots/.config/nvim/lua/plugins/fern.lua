@@ -55,6 +55,11 @@ return function ()
 
     -- Hide patterns
     local hide = "\\.trj$"
+    hide = hide .. "\\|" .. "\\.aux$"
+    hide = hide .. "\\|" .. "\\.fdb_latexmk$"
+    hide = hide .. "\\|" .. "\\.fls$"
+    hide = hide .. "\\|" .. "\\.toc$"
+    hide = hide .. "\\|" .. "\\.pdf$"
     hide = hide .. "\\|" .. "\\.dump$"
     hide = hide .. "\\|" .. "\\.lammpsdump$"
     hide = hide .. "\\|" .. "\\.checkpoint$"

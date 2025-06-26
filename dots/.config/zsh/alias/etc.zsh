@@ -5,3 +5,4 @@ alias pgen="pass generate -c"
 alias cla=clear
 alias mp="mpv --vo=drm --keep-open=yes"
 alias nv=nvim
+alias sd=sudo

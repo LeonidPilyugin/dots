@@ -40,3 +40,6 @@ vim.keymap.set("n", "<leader>P", "\"0P",
 -- Move changing text to black hole
 vim.keymap.set("v", "p", "\"_dP",
     { desc = "Move changing line to black hole" })
+
+vim.keymap.set("n", "<leader>.", function() vim.diagnostic.open_float() end,
+    { desc = "Show diagnostics" })
