@@ -8,3 +8,4 @@ alias nv=nvim
 alias sd=sudo
 alias pm=pacman
 alias pu="sudo pacman -Syyu"
+alias ff=ffmpeg
