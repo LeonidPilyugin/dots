@@ -43,7 +43,7 @@ return {
             [[
                 <>/**
                 <> * <>
-                <> * 
+                <> *
                 <> * <>
                 <> */
             ]],
@@ -61,7 +61,7 @@ return {
 
     s(
         {
-            trig = [[^(\s*)..]],
+            trig = [[^(\s*)\.\.]],
             desc = "Inherit valadoc comment",
             regTrig = true,
             trigEngine = "ecma",
@@ -94,7 +94,7 @@ return {
             [[
                 <>/**
                 <> * <>
-                <> * 
+                <> *
                 <> * <><>
                 <> */
             ]],
@@ -174,7 +174,7 @@ return {
                         table.insert(nodes, t({""}))
 
                         local index = 1
-                        
+
                         if returns then
                             table.insert(
                                 nodes,

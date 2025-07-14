@@ -37,7 +37,7 @@ return {
             desc = "Figure",
             regTrig = true,
             trigEngine = "ecma",
-            snippetType = "autosnippet",
+            -- snippetType = "autosnippet",
             condition = function()
                 return vim.fn['vimtex#syntax#in_mathzone']() == 0
             end,
