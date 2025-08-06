@@ -1,0 +1,15 @@
+[sepolia]
+consensus_rpc = "http://unstable.sepolia.beacon-api.nimbus.team"
+execution_rpc = "https://eth-sepolia.g.alchemy.com/public"
+rpc_port = 8545
+rpc_bind_ip = "127.0.0.1"
+max_checkpoint_age = 86400
+load_external_fallback = true
+
+[mainnet]
+consensus_rpc = "http://testing.mainnet.beacon-api.nimbus.team/"
+execution_rpc = "https://eth-mainnet.g.alchemy.com/public"
+rpc_port = 8545
+rpc_bind_ip = "127.0.0.1"
+max_checkpoint_age = 86400
+load_external_fallback = true
