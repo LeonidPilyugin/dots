@@ -3,12 +3,15 @@ from sage.misc.viewer import pdf_viewer, viewer
 viewer.pdf_viewer('okular')
 
 # set some variables
-x = var("x")
-y = var("y")
-z = var("z")
-t = var("t")
-r = var("r")
-a = var("a")
-b = var("b")
-c = var("c")
+for var_name in (
+    "x",
+    "y",
+    "z",
+    "t",
+    "r",
+    "a",
+    "b",
+    "c",
+):
+    globals()[var_name] = var(var_name)
 
