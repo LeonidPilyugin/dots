@@ -118,6 +118,18 @@ require("lazy").setup({
         config = require("plugins.vimtex"),
     },
 
+    -- Linter
+    {
+        "mfussenegger/nvim-lint",
+        config = require("plugins.lint"),
+    },
+
+    -- Formatter
+    {
+        "stevearc/conform.nvim",
+        config = require("plugins.conform"),
+    },
+
     -- Convert colortheme to lua
     -- "rktjmp/shipwright.nvim",
 

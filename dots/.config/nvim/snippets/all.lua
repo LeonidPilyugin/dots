@@ -30,26 +30,23 @@ local pr = function(n)
     return f( function(_, snip) return snip.captures[n] end )
 end
 
-return {
-    s(
+local pair = function(l, r)
+    return s(
         {
-            trig = [[^(.+)?cc]],
-            desc = "Center environment",
-            regTrig = true,
-            trigEngine = "ecma",
-            -- snippetType = "autosnippet",
-            condition = function()
-                return vim.fn['vimtex#syntax#in_mathzone']() == 0
-            end,
+            trig = l,
+            snippetType = "autosnippet",
+            wordTrig = false,
         },
-        fmta(
-            [[
-                <>\begin{center}
-                <>  <>
-                <>\end{center}
-                <>
-            ]],
-            { pr(1), pr(1), i(1), pr(1), pr(1) }
-        )
-    ),
+        {
+            t(l),
+            i(0),
+            t(r),
+        }
+    )
+end
+
+return {
+    pair("(", ")"),
+    pair("[", "]"),
+    pair("{", "}"),
 }

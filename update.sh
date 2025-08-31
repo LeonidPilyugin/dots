@@ -6,6 +6,7 @@ PATHES=(
     .config/zsh
     .config/nvim
     .config/sage
+    .config/uncrustify
     .helios/helios.toml
     .zshrc
     .gitconfig

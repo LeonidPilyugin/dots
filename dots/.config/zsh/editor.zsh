@@ -4,4 +4,4 @@ elif type vim > /dev/null; then
     export EDITOR=vim
 fi
 
-export NVIM_NO_COLORS=yes
+# export NVIM_NO_COLORS=yes
