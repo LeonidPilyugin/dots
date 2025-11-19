@@ -1,13 +1,23 @@
-function dlay () {
-    yt-dlp -o "$1" --no-playlist -f "bestaudio" --audio-format wav "$2"
-    echo "$1" | reencode
+function reencode () {
+    if [ -n "$1" ]; then
+        format="$1"
+    fi
+    while read -r file; do
+        if [ -z "$format" ]; then
+            ext="${file##*.}"
+        else
+            ext="$format"
+        fi
+        bsname=$(basename "$file" ".${file##*.}")
+        echo "$file -> $bsname.$ext"
+        yes | ffmpeg -y -v 0 -i "$file" "${bsname}-ffmpeg.$ext"
+        mv "${bsname}-ffmpeg.$ext" "$bsname.$ext"
+    done
 }
 
-function reencode () {
-    while read -r file; do
-        ext="${file##*.}"
-        echo "$file -> $file.$ext"
-        yes | ffmpeg -y -v 0 -i "$file" "$file.$ext"
-        mv "$file.$ext" "$file"
-    done
+alias yt="yt-dlp --js-runtimes node --remote-components ejs:npm --no-playlist --cookies-from-browser firefox"
+
+function dlay () {
+    yt -f bestaudio --extract-audio --audio-format wav -o "$1" "$2"
+    echo "$1.wav" | reencode
 }

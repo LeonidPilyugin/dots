@@ -11,3 +11,4 @@ alias pu="sudo pacman -Syyu"
 alias ff=ffmpeg
 alias wa="watch -tn 0.1"
 alias tref="tree -Ffi | grep -v /$ | head -n -2"
+alias py=python3
