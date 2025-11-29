@@ -15,9 +15,9 @@ function reencode () {
     done
 }
 
-alias yt="yt-dlp --js-runtimes node --remote-components ejs:npm --no-playlist --cookies-from-browser firefox"
+alias yt="yt-dlp --js-runtimes node --remote-components ejs:npm --cookies-from-browser firefox"
 
 function dlay () {
-    yt -f bestaudio --extract-audio --audio-format wav -o "$1" "$2"
+    yt -f bestaudio --no-playlist --extract-audio --audio-format wav -o "$1" "$2"
     echo "$1.wav" | reencode
 }
