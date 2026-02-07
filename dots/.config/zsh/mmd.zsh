@@ -21,3 +21,5 @@ function dlay () {
     yt -f bestaudio --no-playlist --extract-audio --audio-format wav -o "$1" "$2"
     echo "$1.wav" | reencode
 }
+
+alias dlas="yt -f bestaudio --no-playlist --extract-audio --audio-format wav --split-chapters"
