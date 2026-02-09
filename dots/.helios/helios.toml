@@ -26,7 +26,9 @@ max_checkpoint_age = 86400
 load_external_fallback = true
 
 [mainnet]
-consensus_rpc = "http://testing.mainnet.beacon-api.nimbus.team/"
+consensus_rpc = "http://unstable.mainnet.beacon-api.nimbus.team/"
+# consensus_rpc = "https://www.lightclientdata.org/"
+# consensus_rpc = "http://testing.mainnet.beacon-api.nimbus.team/"
 # execution_rpc = "https://go.getblock.us/27eb23f40b964c9bb71b62f721e594e7"
 # execution_rpc = "https://0xrpc.io/eth"
 # execution_rpc = "https://1rpc.io/eth"

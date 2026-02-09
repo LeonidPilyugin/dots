@@ -13,3 +13,4 @@ source ~/.config/vim/howmuch.vim
 source ~/.config/vim/surround.vim
 source ~/.config/vim/complete.vim
 source ~/.config/vim/snippets.vim
+source ~/.config/vim/toml.vim
