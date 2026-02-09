@@ -5,6 +5,7 @@ echo "Updating repo"
 PATHES=(
     .config/zsh
     .config/nvim
+    .config/vim
     .config/sage
     .config/uncrustify
     .helios/helios.toml

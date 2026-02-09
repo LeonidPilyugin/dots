@@ -9,18 +9,18 @@
 	defaultBranch = main
 
 [core]
-	editor = nvim
+	editor = vim
 
 [pull]
 	rebase = false
 
 [merge]
-	tool = "nvim"
+	tool = "vim"
 
 [mergetool]
 	keepBackup = false
 	prompt = false
 
-[mergetool "nvim"]
-	cmd = "nvim -d -c \"wincmd l\" -c \"norm ]c\" \"$LOCAL\" \"$MERGED\" \"$REMOTE\""
+[mergetool "vim"]
+	cmd = "vim -d -c \"wincmd l\" -c \"norm ]c\" \"$LOCAL\" \"$MERGED\" \"$REMOTE\""
 

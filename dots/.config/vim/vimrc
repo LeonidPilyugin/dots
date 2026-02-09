@@ -1,0 +1,15 @@
+set runtimepath^=~/.config/vim/
+
+" Basic settings
+source ~/.config/vim/basic.vim
+
+" Configure colors
+source ~/.config/vim/colors.vim
+
+" Configure plugins
+source ~/.config/vim/fern.vim
+source ~/.config/vim/commentary.vim
+source ~/.config/vim/howmuch.vim
+source ~/.config/vim/surround.vim
+source ~/.config/vim/complete.vim
+source ~/.config/vim/snippets.vim

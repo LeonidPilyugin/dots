@@ -1,7 +1,5 @@
-if type nvim > /dev/null; then
-    export EDITOR=nvim
-elif type vim > /dev/null; then
-    export EDITOR=vim
-fi
+export EDITOR=vim
 
-# export NVIM_NO_COLORS=yes
+function view () {
+    $EDITOR -M $@
+}
