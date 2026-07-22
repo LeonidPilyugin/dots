@@ -1,8 +1,0 @@
-require("config.etc")
-require("config.keymaps")
-require("config.tabulation")
-require("config.colorcolumn")
-require("config.linenumber")
-require("config.colors")
-require("config.spell")
-require("config.fold")

@@ -1,0 +1,19 @@
+set runtimepath^=~/.config/vim
+set packpath^=~/.config/vim
+
+" Basic settings
+source ~/.config/vim/basic.vim
+
+" Configure colors
+source ~/.config/vim/colors.vim
+
+" Configure languages
+source ~/.config/vim/lang/init.vim
+
+" Configure LSP
+source ~/.config/vim/lsp.vim
+
+" Configure plugins
+source ~/.config/vim/fern.vim
+source ~/.config/vim/howmuch.vim
+source ~/.config/vim/snippets.vim
