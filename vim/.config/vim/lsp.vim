@@ -7,6 +7,7 @@ nnoremap <silent> gd <plug>(lsp-definition)
 nnoremap <silent> gr <plug>(lsp-references)
 nnoremap <silent> gi <plug>(lsp-implementation)
 nnoremap <silent> gt <plug>(lsp-type-definition)
+nnoremap <Leader>a <Plug>(lsp-code-action)
 
 nnoremap <silent> K <plug>(lsp-hover)
 
@@ -71,6 +72,47 @@ if executable('texlab')
             \ 'name': 'texlab',
             \ 'cmd': {-> ['texlab']},
             \ 'allowlist': ['tex', 'plaintex', 'bib'],
+            \ })
+    augroup END
+endif
+
+" JSON
+if executable('vscode-json-language-server')
+    augroup LspJson
+        autocmd!
+        autocmd User lsp_setup call lsp#register_server({
+            \ 'name': 'vscode-json-language-server',
+            \ 'cmd': {-> ['vscode-json-language-server', '--stdio']},
+            \ 'allowlist': ['json', 'jsonc'],
+            \ })
+    augroup END
+endif
+
+" CMake
+if executable('cmake-language-server')
+    augroup LspCmake
+        autocmd!
+        autocmd User lsp_setup call lsp#register_server({
+            \ 'name': 'cmake-language-server',
+            \ 'cmd': {-> ['cmake-language-server']},
+            \ 'allowlist': ['cmake'],
+            \ })
+    augroup END
+endif
+
+" Rust
+if executable('rust-analyzer')
+    augroup LspRust
+        autocmd!
+        autocmd User lsp_setup call lsp#register_server({
+            \ 'name': 'rust-analyzer',
+            \ 'cmd': {-> ['rust-analyzer']},
+            \ 'allowlist': ['rust'],
+            \ 'initialization_options': {
+            \     'check': {
+            \         'command': 'clippy',
+            \     },
+            \ },
             \ })
     augroup END
 endif

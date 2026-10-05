@@ -1,5 +1,3 @@
-autocmd FileType cpp :setlocal foldmethod=expr foldexpr=FoldCComment()
-
 autocmd FileType cpp inoremap { {<CR>}<up><end><CR>
 
 def FoldCComment(): string

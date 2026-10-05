@@ -62,3 +62,10 @@ nnoremap <leader>l <C-w>l
 nnoremap <leader>k <C-w>k
 nnoremap <leader>j <C-w>j
 nnoremap <leader>h <C-w>h
+
+if exists('##TerminalOpen')
+  augroup terminal_no_numbers
+    autocmd!
+    autocmd TerminalOpen * setlocal nonumber norelativenumber
+  augroup END
+endif

@@ -1,6 +1,3 @@
-" autocmd FileType c :setlocal foldmethod=expr foldexpr=FoldCComment()
-autocmd FileType c :setlocal foldmethod=syntax
-
 autocmd FileType c inoremap { {<CR>}<up><end><CR>
 
 def FoldCComment(): string
