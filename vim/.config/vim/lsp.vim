@@ -1,6 +1,10 @@
 " Async complete
 let g:asyncomplete_auto_popup = 1
 let g:lsp_diagnostics_echo_cursor = 1
+let g:lsp_diagnostics_virtual_text_enabled = 0
+
+nnoremap <expr> <C-f> lsp#scroll(4)
+nnoremap <expr> <C-b> lsp#scroll(-4)
 
 " Key mappings
 nnoremap <silent> gd <plug>(lsp-definition)
@@ -23,7 +27,7 @@ if executable('clangd')
         autocmd User lsp_setup call lsp#register_server({
             \ 'name': 'clangd',
             \ 'cmd': {server_info->['clangd', '--compile-commands-dir=build']},
-            \ 'allowlist': ['c', 'cpp'],
+            \ 'allowlist': ['c', 'cpp', 'cuda'],
             \ })
     augroup END
 endif
